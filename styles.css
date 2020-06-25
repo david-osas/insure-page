@@ -1,0 +1,176 @@
+/* general css section */
+h1{
+  font-family: 'Old Standard TT', serif;
+}
+h3{
+  font-family: 'Krona One', sans-serif;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+a:active, a:hover{
+  color: black;
+}
+button{
+  padding: 5px 30px !important;
+  background-color: transparent;
+  border-style: solid;
+}
+button:active, button:hover{
+  background-color: black;
+  color: white !important;
+  border-color: black;
+}
+.blue-button{
+  border-color: white;
+  color: white;
+}
+.blue-button:active, .blue-button:hover{
+  background-color: white;
+  color: black !important;
+  border-color: white;
+}
+
+/* large screens breakpoint css section */
+@media only screen and (min-width: 768px) {
+  .header-img{
+  height: 500px;
+}
+  .short-rule{
+    width: 100px;
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+  .bg-img-left{
+    content: url("images/bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .bg-img-right{
+    content: url("images/bg-pattern-intro-right-desktop.svg");
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .work{
+    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+.footer{
+  background-image: url("images/bg-pattern-footer-desktop.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+}
+
+/* small screens breakpoint css section */
+@media only screen and (max-width: 600px) {
+body{
+  text-align: center;
+}
+ .header-img{
+  width: 100%;
+}
+.bg-img-right, .bg-img-left{
+  display: none;
+}
+.short-rule{
+  width: 200px;
+  padding-bottom: 30px;
+}
+
+.work{
+  background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.footer{
+  background-image: url("images/bg-pattern-footer-mobile.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.footer-list li{
+  display:table;
+  margin:0 auto 0 auto;
+}
+
+}
+
+
+/* header css section */
+.navbar{
+  z-index: 2;
+}
+.header{
+  padding-bottom: 150px;
+}
+
+.header-jumbo{
+  padding-bottom: 110px;
+  background-color: #120136;
+  color: white;
+}
+
+
+/* details css section */
+.clear{
+  clear: both;
+}
+.icon{
+  height: 60px;
+  width: 60px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+h4{
+  margin-bottom: 20px;
+  font-family: 'Old Standard TT', serif;
+}
+
+/* work css section */
+.work{
+  margin: 100px 0;
+  padding: 50px 50px;
+  color: white;
+  background-color: #120136;
+}
+.find{
+  line-height: 25px;
+}
+
+
+/* footer css section */
+.footer{
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+.insure-footer{
+margin-bottom: 25px;
+}
+.footer-details{
+  margin-top: 30px;
+}
+.footer-list{
+  list-style-type: none;
+  padding-inline-start: 15px;
+  margin-top: 25px;
+}
+.footer-list li{
+  line-height: 35px;
+}
+.last-list{
+  padding-inline-start: 0;
+}
+.footer-icons{
+  padding: 0 8px;
+}
+div span{
+  font-weight: bold;
+  color: grey;
+}
